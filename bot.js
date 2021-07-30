@@ -7,4 +7,8 @@ bot.on("ready", () => {
     console.log("Ready to faithfully serve the Repvblic!");
 });
 
+bot.on("message", (message) => {
+
+});
+
 bot.login(token);
