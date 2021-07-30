@@ -10,6 +10,12 @@ const commands = {
         action: msg => {
             msg.channel.send(images.sneed);
         }
+    },
+    cope: {
+        condition: msg => {
+            const lm = msg.content.toLowerCase();
+            return lm.includes("cope") || lm.includes("seethe");
+        }
     }
 }
 
