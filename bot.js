@@ -1,6 +1,6 @@
 const { Client, RichEmbed, MessageEmbed, MessageReaction, Message } = require("discord.js");
 const { token } = require("./token.json");
-const { images } = require("./config.json")
+const { images, paragraphs } = require("./config.json")
 
 const commands = {
     sneed: {
@@ -18,6 +18,14 @@ const commands = {
         },
         action: msg => {
             msg.channel.send(images.cope);
+        }
+    },
+    pedo: {
+        condition: msg => {
+            return msg.content.toLowerCase().includes("pedo");
+        },
+        action: msg => {
+            msg.reply(paragraphs.pedo);
         }
     }
 }
