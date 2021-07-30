@@ -15,6 +15,9 @@ const commands = {
         condition: msg => {
             const lm = msg.content.toLowerCase();
             return lm.includes("cope") || lm.includes("seethe");
+        },
+        action: msg => {
+            msg.channel.send(images.cope);
         }
     }
 }
