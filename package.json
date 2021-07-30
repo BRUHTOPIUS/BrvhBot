@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BRUHTOPIUS/BrvhBot/issues"
   },
-  "homepage": "https://github.com/BRUHTOPIUS/BrvhBot#readme"
+  "homepage": "https://github.com/BRUHTOPIUS/BrvhBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
 }
