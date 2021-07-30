@@ -27,6 +27,14 @@ const commands = {
         action: msg => {
             msg.reply(paragraphs.pedo);
         }
+    },
+    nigger: {
+        condition: msg => {
+            return msg.content.toLowerCase().includes("nigger");
+        },
+        action: msg => {
+            msg.reply(paragraphs.nigger);
+        }
     }
 }
 
