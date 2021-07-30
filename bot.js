@@ -8,7 +8,7 @@ bot.on("ready", () => {
 });
 
 bot.on("message", (message) => {
-
+    if (message.author.bot) return;
 });
 
 bot.login(token);
