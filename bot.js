@@ -1,6 +1,6 @@
 const { Client, RichEmbed, MessageEmbed, MessageReaction, Message } = require("discord.js");
-const { or } = require("sequelize/types/lib/operators");
 const { token } = require("./token.json");
+const { images } = require("./config.json")
 
 const commands = {
     sneed: {
@@ -8,7 +8,7 @@ const commands = {
             return msg.content.toLowerCase().includes("sneed");
         },
         action: msg => {
-            msg.channel.send("https://i.postimg.cc/ncr1T9ZN/image.png");
+            msg.channel.send(images.sneed);
         }
     }
 }
