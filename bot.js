@@ -1,1 +1,1 @@
-import { TOKEN } from "token.json";
+const {token} = require("./token.json");
