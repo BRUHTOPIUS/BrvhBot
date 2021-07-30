@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Token (don't want to accidentally commit this lol)
+token.json
