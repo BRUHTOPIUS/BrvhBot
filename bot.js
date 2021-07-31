@@ -35,6 +35,14 @@ const commands = {
         action: msg => {
             msg.reply(paragraphs.nigger);
         }
+    },
+    huey: {
+        condition: msg => {
+            return msg.content.toLowerCase().includes("music");
+        },
+        action: msg => {
+            msg.reply(paragraphs.huey);
+        }
     }
 }
 
