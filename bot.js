@@ -43,6 +43,23 @@ const commands = {
         action: msg => {
             msg.reply(paragraphs.huey);
         }
+    },
+    telemarketer: {
+        condition: msg => {
+            return msg.content.toLowerCase().includes("telemarketer");
+        },
+        action: msg => {
+            msg.reply(paragraphs.telemarketer);
+        }
+    },
+    mcdonalds: {
+        condition: msg => {
+            const lm = msg.content.toLowerCase()
+            return lm.includes("maccies") || lm.includes("mcdonalds");
+        },
+        action: msg => {
+            msg.reply(paragraphs.mcdonalds);
+        }
     }
 }
 
